@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сіз шақырылдыңыз!</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #e6d3a3);
+            color: #3e2723;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #e6d3a3, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .splash-content {
+            text-align: center;
+            color: #3e2723;
+        }
+
+        .splash-content h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: slideIn 1.5s ease-out;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .splash-content p {
+            font-size: 22px;
+            margin-top: 10px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .splash-content .ornament {
+            width: 100px;
+            height: auto;
+            margin: 10px auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #caa472;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #caa472;
+            margin-bottom: 20px;
+            animation: slideIn 1.5s ease-out;
+            font-family: 'Times New Roman', serif;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #caa472;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #caa472;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        button {
+            background-color: #caa472;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a98855;
+        }
+
+        .quotes {
+            margin: 40px 0;
+            font-style: italic;
+            color: #5d4037;
+            animation: fadeIn 3s ease-in;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .quotes p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .photo-placeholder {
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+            background: #f9f9f9;
+            border: 2px dashed #caa472;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #caa472;
+        }
+
+        .link-container {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .link-container img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-screen" id="splash">
+        <div class="splash-content">
+            <img src="https://via.placeholder.com/100x100?text=%D0%9E%D1%80%D0%BD%D0%B0%D0%BC%D0%B5%D0%BD%D1%82" alt="Орнамент" class="ornament">
+            <h1>Қош келдіңіз!</h1>
+            <p>Біздің ерекше мерекемізге қош келдіңіз!</p>
+            <audio autoplay>
+                <source src="kazakh_music.mp3" type="audio/mpeg">
+                Сіздің браузеріңіз аудионы қолдамайды.
+            </audio>
+        </div>
+    </div>
+
+    <div class="container" id="main-content" style="display:none;">
+        <h1>Сіз шақырылдыңыз!</h1>
+        <p>Біз сізді ерекше мерекеге шақырғанымызға қуаныштымыз!</p>
+        <p><strong>Күні:</strong> 2024 жылғы 31 желтоқсан</p>
+        <p><strong>Уақыты:</strong> 20:00</p>
+
+        <div class="photo-placeholder">
+            <img src="photo_2024-12-16_12-18-32.jpg" alt="Именинник" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+        
+
+        <div class="link-container">
+            <img src="1200x630wa.png" alt="2ГИС эмблемасы">
+            <p><strong>Өтетін орны:</strong> <a href="https://goo.gl/maps/example" target="_blank">123 Мереке көшесі, Көңіл Қаласы</a></p>
+        </div>
+
+        <div class="quotes">
+            <p>"Достармен бірге болған мереке - ең бақытты күн."</p>
+            <p>"Мерекеде күліп, күлімдеуді ұмытпаңыз."</p>
+            <p>"Келіңіз, бізбен бірге естеліктер жасаңыз!"</p>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="name">Сіздің атыңыз:</label>
+            <input type="text" id="name" name="name" placeholder="Атыңызды енгізіңіз" required>
+
+            <label for="attendance">Сіз қатысасыз ба?</label>
+            <select id="attendance" name="attendance">
+                <option value="yes">Иә</option>
+                <option value="no">Жоқ</option>
+                <option value="maybe">Мүмкін</option>
+            </select>
+
+            <label for="guests">Егер келсеңіз, өзіңізбен бірге кімдерді алып келесіз?</label>
+            <input type="text" id="guests" name="guests" placeholder="Аттарын енгізіңіз (бар болса)">
+
+            <button type="submit">Жіберу</button>
+        </form>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('splash').style.animation = 'fadeOut 1s ease-out';
+                setTimeout(function() {
+                    document.getElementById('splash').style.display = 'none';
+                    document.getElementById('main-content').style.display = 'block';
+                }, 1000); // 1 секунд анимация күту
+            }, 5000); // 5 секунд күту
+        };
+    </script>
+</body>
+</html>
