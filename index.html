@@ -177,7 +177,7 @@
 <body>
     <div class="splash-screen" id="splash">
         <div class="splash-content">
-            <img src="https://via.placeholder.com/100x100?text=%D0%9E%D1%80%D0%BD%D0%B0%D0%BC%D0%B5%D0%BD%D1%82" alt="Орнамент" class="ornament">
+            <img src="or.png" alt="Орнамент" class="ornament">
             <h1>Қош келдіңіз!</h1>
             <p>Біздің ерекше мерекемізге қош келдіңіз!</p>
             <audio autoplay>
@@ -209,24 +209,23 @@
             <p>"Келіңіз, бізбен бірге естеліктер жасаңыз!"</p>
         </div>
 
-        <form action="#" method="POST">
+        <form action="https://formspree.io/f/xzzbldok" method="POST">
             <label for="name">Сіздің атыңыз:</label>
             <input type="text" id="name" name="name" placeholder="Атыңызды енгізіңіз" required>
-
+        
             <label for="attendance">Сіз қатысасыз ба?</label>
             <select id="attendance" name="attendance">
                 <option value="yes">Иә</option>
                 <option value="no">Жоқ</option>
                 <option value="maybe">Мүмкін</option>
             </select>
-
+        
             <label for="guests">Егер келсеңіз, өзіңізбен бірге кімдерді алып келесіз?</label>
             <input type="text" id="guests" name="guests" placeholder="Аттарын енгізіңіз (бар болса)">
-
+        
             <button type="submit">Жіберу</button>
         </form>
-    </div>
-
+        
     <script>
         window.onload = function() {
             setTimeout(function() {
